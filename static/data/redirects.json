@@ -1,0 +1,36 @@
+[
+    { "path": "/github", "url": "https://github.com/themarcba" },
+    { "path": "/twitter", "url": "https://twitter.com/_marcba" },
+    { "path": "/dev", "url": "https://dev.to/_marcba" },
+    { "path": "/paypal", "url": "https://www.paypal.me/themarcba" },
+    {
+        "path": "/linkedin",
+        "url": "https://www.linkedin.com/in/themarcba"
+    },
+    {
+        "path": "/btc",
+        "url": "https://gist.github.com/themarcba/1b96e17f696ab6062bd4b2675c9f9b9f"
+    },
+    {
+        "path": "/meet",
+        "url": "https://calendly.com/marcba/quick"
+    },
+    {
+        "path": "/coffee",
+        "url": "https://ko-fi.com/themarcba",
+        "text": "Want to buy me coffee? ☕️❤️ ...",
+        "timeout": 2000
+    },
+    {
+        "path": "/wp-admin",
+        "url": "https://media.giphy.com/media/kFgzrTt798d2w/source.gif",
+        "text": "Nice try...",
+        "timeout": 5000
+    },
+    {
+        "path": "/phpmyadmin",
+        "url": "https://media.giphy.com/media/kFgzrTt798d2w/source.gif",
+        "text": "Nice try...",
+        "timeout": 5000
+    }
+]

@@ -1,0 +1,25 @@
+.heart {
+    color: var(--custom-red);
+}
+
+.profilePicture {
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-bottom: -5px;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.more-posts {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    margin-top: 3rem;
+}

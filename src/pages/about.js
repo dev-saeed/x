@@ -8,7 +8,6 @@ import Skill from "../components/skill"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHandPeace, faSmile } from "@fortawesome/free-regular-svg-icons"
 import {
-    faLaptopCode,
     faGraduationCap,
     faPlane,
     faMicrochip,
@@ -16,7 +15,6 @@ import {
     faCode,
     faTv,
     faWrench,
-    faLanguage,
 } from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`

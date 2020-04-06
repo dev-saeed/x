@@ -47,7 +47,7 @@ const IndexPage = props => {
                 </h1>
 
                 <h2 className={indexStyles.title}>
-                    I'm Saeed <div className={indexStyles.wave}>👋</div>
+                    I'm Saeed <span role="img" aria-label="wave" className={indexStyles.wave}>👋</span>
                     <br />
                     I&nbsp;
                     <FontAwesomeIcon

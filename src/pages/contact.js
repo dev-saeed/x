@@ -10,7 +10,7 @@ import {
     faGithub,
     faDev,
     faLinkedin,
-    faCodepen,
+    faMedium,
 } from "@fortawesome/free-brands-svg-icons"
 
 const ContactPage = (props) => {
@@ -21,7 +21,7 @@ const ContactPage = (props) => {
             <p>
                 My preferred way of contact is via&nbsp;
                 <a
-                    href="https://www.twitter.com/_marcba"
+                    href="https://twitter.com/iamsaeed_dev"
                     class={mainStyle.link}
                 >
                     Twitter <FontAwesomeIcon icon={faTwitter} />
@@ -29,37 +29,37 @@ const ContactPage = (props) => {
                 &nbsp;or&nbsp;
                 <a
                     className={mainStyle.link}
-                    href="mailto:hello@marc.dev"
-                    alt="Mail to hello@marc.dev"
+                    href="mailto:saeed_dev@yahoo.com"
+                    alt="Mail to saeed_dev@yahoo.com"
                 >
-                    e-mail&nbsp;<FontAwesomeIcon icon={faEnvelope} />&nbsp;
+                    E-mail&nbsp;<FontAwesomeIcon icon={faEnvelope} />&nbsp;
                 </a>. Feel free to check out my social media presence below to get to know me better.
             </p>
             <div className={contactStyle.icons}>
                 <a
-                    href="https://www.twitter.com/_marcba"
+                    href="https://twitter.com/iamsaeed_dev"
                     class={contactStyle.iconLink}
                 >
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
 
                 <a
-                    href="https://github.com/themarcba"
+                    href="https://github.com/dev-saeed"
                     class={contactStyle.iconLink}
                 >
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
 
-                <a href="https://dev.to/_marcba" class={contactStyle.iconLink}>
+                <a href="https://dev.to/saeeddev" class={contactStyle.iconLink}>
                     <FontAwesomeIcon icon={faDev} />
                 </a>
 
-                <a href="https://codepen.io/_marcba" class={contactStyle.iconLink}>
-                    <FontAwesomeIcon icon={faCodepen} />
+                <a href="https://medium.com/@saeeddev" class={contactStyle.iconLink}>
+                    <FontAwesomeIcon icon={faMedium} />
                 </a>
 
                 <a
-                    href="https://www.linkedin.com/in/themarcba"
+                    href="https://www.linkedin.com/in/saeeddev/"
                     class={contactStyle.iconLink}
                 >
                     <FontAwesomeIcon icon={faLinkedin} />

@@ -15,7 +15,7 @@ const Skill = ({ name, file, progress }) => {
                     node {
                         name
                         childImageSharp {
-                            fixed(width: 130) {
+                            fixed(width: 70) {
                                 ...GatsbyImageSharpFixed
                             }
                         }

@@ -2,8 +2,6 @@ import React from "react"
 import mainStyles from "../styles/main.module.scss"
 import Layout from "../components/layout"
 import Head from "../components/head"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSadTear } from "@fortawesome/free-regular-svg-icons"
 
@@ -63,11 +61,6 @@ const MentorshipIndex = props => {
                 path="/mentorship"
                 socialCardMeta={socialCardMeta}
             />
-
-            {/* <Img
-                className={blogStyles.coverImage}
-                fluid={props.data.file.childImageSharp.fluid}
-            /> */}
 
             <div style={{ textAlign: "center" }}>
                 <div style={{fontSize: '6rem', margin: '3rem 0', color: 'var(--lighterText)'}}>

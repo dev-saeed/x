@@ -12,8 +12,8 @@ const path = require("path")
 module.exports = {
     siteMetadata: {
         title:
-            "Full-Stack Web Developer | Marc Backes | JavaScript, Node.js, Vue.js",
-        author: "Marc Backes",
+            "Full-Stack Web Developer | Saeed | JavaScript, ReactJS, React Native",
+        author: "Saeed",
         version: "0.2.1",
         hostname: "saeed",
     },

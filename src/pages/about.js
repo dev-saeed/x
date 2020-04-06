@@ -51,20 +51,19 @@ const AboutPage = props => {
                             Hello <FontAwesomeIcon icon={faHandPeace} />
                         </h1>
                         <p>
-                            Hi, I'm Marc, a happily married,
-                            30-something-year-old{" "}
-                            <strong>full-stack web developer</strong> 💻 with a
+                            Hi, I'm Saeed, a software engineer,
+                            having experience of working with {" "}
+                            <strong>innovative startups</strong> around the world 💻 with a
                             strong educational background in software
-                            engineering. I am doing freelance work 🚀{" "}
-                            <strong>based in Luxembourg</strong> 🇱🇺, but I do
-                            work remotely for international clients.
+                            engineering. Nowadays, I am doing freelance work 🚀{" "}
+                            <strong>remotely</strong>.
                         </p>
                     </div>{" "}
                 </div>
 
-                <hr className={aboutStyle.gradientLine} />
+                {/* <hr className={aboutStyle.gradientLine} /> */}
 
-                <h1>
+                {/* <h1>
                     Work experience <FontAwesomeIcon icon={faLaptopCode} />
                 </h1>
                 <p>
@@ -122,7 +121,7 @@ const AboutPage = props => {
                     title="Mobile Application Developer"
                     details="EducDesign"
                     location="Luxembourg 🇱🇺"
-                />
+                /> */}
 
                 <hr className={aboutStyle.gradientLine} />
 

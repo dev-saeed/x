@@ -2,13 +2,13 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import footerStyles from "./footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHeart, faCode, faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons"
+import { faHeart, faCode } from "@fortawesome/free-solid-svg-icons"
 import {
     faTwitter,
     faGithub,
     faDev,
     faLinkedin,
-    faCodepen,
+    faMedium,
 } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
@@ -43,33 +43,36 @@ const Footer = () => {
                     />
                 </a>
             </p>
+            <p>
+                inspired by{" "}
+            <a href="https://www.marc.dev" alt="Marc Backes">
+                    Marc Backes
+            </a>
+            </p>
             <p className={footerStyles.social}>
-                <a href="https://www.twitter.com/_marcba">
+                <a href="https://twitter.com/iamsaeed_dev">
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
 
-                <a href="https://github.com/themarcba">
+                <a href="https://github.com/dev-saeed">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
 
-                <a href="https://dev.to/_marcba">
+                <a href="https://dev.to/saeeddev">
                     <FontAwesomeIcon icon={faDev} />
                 </a>
 
-                <a href="https://codepen.io/_marcba">
-                    <FontAwesomeIcon icon={faCodepen} />
+                <a href="https://medium.com/@saeeddev">
+                    <FontAwesomeIcon icon={faMedium} />
                 </a>
 
-                <a href="https://www.linkedin.com/in/themarcba">
+                <a href="https://www.linkedin.com/in/saeeddev/">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="https://ko-fi.com/themarcba">
-                    <FontAwesomeIcon icon={faHandHoldingHeart} />
-                </a>
             </p>
-            <p className={footerStyles.small}>
+            {/* <p className={footerStyles.small}>
                 {metadata.hostname} v.{metadata.version}
-            </p>
+            </p> */}
         </footer>
     )
 }

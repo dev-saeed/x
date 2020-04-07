@@ -6,16 +6,18 @@ import mainStyle from "../styles/main.module.scss"
 import LifeEvent from "../components/lifeEvent"
 import Skill from "../components/skill"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHandPeace, faSmile } from "@fortawesome/free-regular-svg-icons"
 import {
-    faGraduationCap,
-    faPlane,
     faMicrochip,
-    faRocket,
-    faCode,
-    faTv,
+    faHandPeace,
     faWrench,
+    faSpaceShuttle,
+    faServer,
+    faFlask,
 } from "@fortawesome/free-solid-svg-icons"
+import {  
+    faHtml5, faNpm, faDocker, faTrello,
+     faCss3, faGulp, faGrunt, faServicestack, faReact, faNode, faJs, faPython, faAndroid, faAppStoreIos } from "@fortawesome/free-brands-svg-icons"
+
 
 export const query = graphql`
     query {
@@ -45,16 +47,18 @@ const AboutPage = props => {
                 <div className={aboutStyle.intro}>
                     <div className={aboutStyle.introText}>
                         <h1>
-                            What I've built <FontAwesomeIcon icon={faHandPeace} />
+                        <FontAwesomeIcon icon={faHandPeace} />  What I've built  ?
                         </h1>
                         <p>
-                            I have worked on both open source and closed source 
-                            projects. 
-                            having experience of working with {" "}
-                            <strong>innovative startups</strong> around the world 💻 with a
-                            strong educational background in software
-                            engineering. Nowadays, I am doing freelance work 🚀{" "}
-                            <strong>remotely</strong>.
+                            I have
+                            experience of working with {" "}
+                            <strong>innovative startups</strong> around the world in 
+                            <strong>🧠 mental wellbeing, 🏥 healthcare, 💳 ecommerce,
+                            👥 customer care</strong> and other domains. 
+                            </p>
+                            <p>
+                            Other than that, I am active part of 🗼 open source communities 
+                            and write <strong>📦 packages and 📚 libraries</strong> for developers.
                         </p>
                     </div>{" "}
                 </div>
@@ -124,12 +128,25 @@ const AboutPage = props => {
                 <hr className={aboutStyle.gradientLine} />
 
                 <h1>
-                    Tech Skills <FontAwesomeIcon icon={faWrench} />
+                    What are my skills <FontAwesomeIcon icon={faWrench} /> ?
                 </h1>
 
                 <div className={aboutStyle.skills}>
-                    <Skill name="JavaScript" file="javascript" progress={85} />
-                    <Skill name="MongoDB" file="mongodb" progress={75} />
+                   
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faHtml5} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons}  size="5x" icon={faCss3} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faJs} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faReact} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x"  icon={faNode} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons}  size="5x" icon={faNpm} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faServer} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faPython} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faDocker} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faAndroid} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faAppStoreIos} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faTrello} />
+                    {/* <FontAwesomeIcon icon={faDatabase} /> */}
+                    {/* <Skill name="MongoDB" file="mongodb" progress={75} />
                     <Skill name="Express.js" file="expressjs" progress={60} />
                     <Skill name="Vue.js" file="vuejs" progress={80} />
                     <Skill name="Node.js" file="nodejs" progress={85} />
@@ -138,10 +155,11 @@ const AboutPage = props => {
                     <Skill name="PHP" file="php" progress={85} />
                     <Skill name="jQuery" file="jquery" progress={85} />
                     <Skill name="MySQL" file="mysql" progress={90} />
-                    <Skill name="WebRTC" file="webrtc" progress={50} />
+                    <Skill name="WebRTC" file="webrtc" progress={50} /> */}
                 </div>
                 <hr className={aboutStyle.gradientLine} />
 
+{/*
                 <h1>
                     Education <FontAwesomeIcon icon={faGraduationCap} />
                 </h1>
@@ -184,11 +202,11 @@ const AboutPage = props => {
                     location="Luxembourg 🇱🇺"
                 />
 
-                <hr className={aboutStyle.gradientLine} />
+                <hr className={aboutStyle.gradientLine} /> *
 
                 <hr className={aboutStyle.gradientLine} />
                 <h1>
-                    Interests <FontAwesomeIcon icon={faSmile} />
+                <FontAwesomeIcon icon={faFolderOpen} /> Open Source work 
                 </h1>
 
                 <h2>
@@ -251,7 +269,7 @@ const AboutPage = props => {
                         (If you want to engange in lengthy conversations with
                         me, these are the way to go.)
                     </small>
-                </p>
+                </p> */}
             </div>
         </Layout>
     )

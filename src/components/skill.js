@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import skillStyles from "./skill.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Skill = ({ name, file, progress }) => {
     const data = useStaticQuery(graphql`
@@ -37,14 +38,14 @@ const Skill = ({ name, file, progress }) => {
 
     const image = (
         <div className={skillStyles.image}>
-            <div className={skillStyles.details}>
+            {/* <div className={skillStyles.details}>
                 <div>{name}</div>
                 <div className={skillStyles.progressBar}>
                     <div className={skillStyles.progress} style={{width: `${progress}%`}}></div>
                 </div>
                 <span className={skillStyles.progressNumber}>{progress}%</span>
-            </div>
-            <img src={imageNode.fixed.src} alt={`Logo for ${name}`}/>
+            </div> */}
+            <FontAwesomeIcon icon={file} alt={`Logo for ${name}`}/>
         </div>
     )
     return <div className={skillStyles.skill}>{image}</div>

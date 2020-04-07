@@ -3,13 +3,14 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import aboutStyle from "./projects.module.scss"
 import mainStyle from "../styles/main.module.scss"
-import LifeEvent from "../components/lifeEvent"
+
 import Skill from "../components/skill"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
     faMicrochip,
     faHandPeace,
     faWrench,
+    faGraduationCap,
     faSpaceShuttle,
     faServer,
     faFlask,
@@ -160,50 +161,7 @@ const AboutPage = props => {
                 <hr className={aboutStyle.gradientLine} />
 
 {/*
-                <h1>
-                    Education <FontAwesomeIcon icon={faGraduationCap} />
-                </h1>
-
-                <LifeEvent
-                    timePeriod="April 2019 - Current"
-                    title="Self-Learning"
-                    details="Node.js, Express, Vue.js, React.js, Gatsby.js"
-                    location="Luxembourg 🇱🇺"
-                    current={true}
-                />
-                <LifeEvent
-                    timePeriod="2009 - 2011"
-                    title="M.Sc. in Engineering"
-                    details="Vorarlberg University of Applied Sciences"
-                    location="Austria 🇦🇹"
-                />
-                <LifeEvent
-                    timePeriod="2011"
-                    title="Marketing (Exchange Semester)"
-                    details="Universidad Istmo Americana"
-                    location="Mexico 🇲🇽"
-                />
-                <LifeEvent
-                    timePeriod="2008 - 2009"
-                    title="Software Development"
-                    details="Engineering College of Copenhagen"
-                    location="Denmark 🇩🇰"
-                />
-                <LifeEvent
-                    timePeriod="2006 - 2009"
-                    title="B.Sc. in Engineering"
-                    details="Vorarlberg University of Applied Sciences"
-                    location="Austria 🇦🇹"
-                />
-                <LifeEvent
-                    timePeriod="2002 - 2006"
-                    title="Technicien en Informatique (Computer Technician)"
-                    details="Lycée des Arts et Métiers"
-                    location="Luxembourg 🇱🇺"
-                />
-
-                <hr className={aboutStyle.gradientLine} /> *
-
+                
                 <hr className={aboutStyle.gradientLine} />
                 <h1>
                 <FontAwesomeIcon icon={faFolderOpen} /> Open Source work 

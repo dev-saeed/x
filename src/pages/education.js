@@ -1,9 +1,12 @@
 import React from "react"
 import mainStyles from "../styles/main.module.scss"
+import aboutStyle from "./projects.module.scss"
 import Layout from "../components/layout"
 import Head from "../components/head"
+import LifeEvent from "../components/lifeEvent"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSadTear } from "@fortawesome/free-regular-svg-icons"
+import { faSadTear, faGraduationCap } from "@fortawesome/free-regular-svg-icons"
+
 
 export const query = graphql`
     query {
@@ -62,26 +65,31 @@ const MentorshipIndex = props => {
                 socialCardMeta={socialCardMeta}
             />
 
-            <div style={{ textAlign: "center" }}>
-                <div style={{fontSize: '6rem', margin: '3rem 0', color: 'var(--lighterText)'}}>
-                    <FontAwesomeIcon icon={faSadTear} />
-                </div>
-                <p>
-                    I'm sorry, you missed it.
-                    <br />
-                    The application deadline has already passed.
-                </p>
-                <p>
-                    Follow me on{" "}
-                    <a
-                        className={mainStyles.link}
-                        href="https://twitter.com/_marcba"
-                    >
-                        Twitter
-                    </a>{" "}
-                    to know about future opportunities.
-                </p>
-            </div>
+                <h1>
+                    Education <FontAwesomeIcon icon={faGraduationCap} />
+                </h1>
+
+                <LifeEvent
+                    timePeriod="2018 - 2019"
+                    title="M.Sc. in Electronics"
+                    details="University of Karachi"
+                    location="Pakistan 🇵🇰"
+                    current={true}
+                />
+                <LifeEvent
+                    timePeriod="2018"
+                    title="Data Scientist With Python Track"
+                    details="DataCamp"
+                    location="Online 🌐"
+                />
+                <LifeEvent
+                    timePeriod="2015-2018"
+                    title="B.Sc.(Hons.) in Electronics"
+                    details="University of Karachi"
+                    location="Pakistan 🇵🇰"
+                />
+                <hr className={aboutStyle.gradientLine} />
+
         </Layout>
     )
 }

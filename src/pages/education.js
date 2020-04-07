@@ -58,7 +58,7 @@ const MentorshipIndex = props => {
         <Layout>
             <Head
                 title="Apply to mentorship"
-                path="/mentorship"
+                path="/education"
                 socialCardMeta={socialCardMeta}
             />
 

@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import footerStyles from "./footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHeart, faCode } from "@fortawesome/free-solid-svg-icons"
 import {
     faTwitter,
     faGithub,
@@ -27,7 +26,7 @@ const Footer = () => {
 
     return (
         <footer className={footerStyles.footer}>
-            <p className={footerStyles.line}>
+            {/* <p className={footerStyles.line}>
                 <FontAwesomeIcon icon={faCode} /> with{" "}
                 <FontAwesomeIcon
                     icon={faHeart}
@@ -42,9 +41,9 @@ const Footer = () => {
                         className={footerStyles.gatsbyLogo}
                     />
                 </a>
-            </p>
+            </p> */}
             <p>
-                inspired by{" "}
+                Built on the top of a theme by{" "}
             <a href="https://www.marc.dev" alt="Marc Backes">
                     Marc Backes
             </a>

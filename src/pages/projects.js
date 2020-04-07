@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
-import aboutStyle from "./about.module.scss"
+import aboutStyle from "./projects.module.scss"
 import mainStyle from "../styles/main.module.scss"
 import LifeEvent from "../components/lifeEvent"
 import Skill from "../components/skill"
@@ -43,13 +43,13 @@ const AboutPage = props => {
             <Head title="About" path={props.path} />
             <div className={aboutStyle.about}>
                 <div className={aboutStyle.intro}>
-                    <div>{profilePicture}</div>
                     <div className={aboutStyle.introText}>
                         <h1>
-                            Hello <FontAwesomeIcon icon={faHandPeace} />
+                            What I've built <FontAwesomeIcon icon={faHandPeace} />
                         </h1>
                         <p>
-                            Hi, I'm Saeed, a software engineer,
+                            I have worked on both open source and closed source 
+                            projects. 
                             having experience of working with {" "}
                             <strong>innovative startups</strong> around the world 💻 with a
                             strong educational background in software

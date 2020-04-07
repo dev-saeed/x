@@ -42,9 +42,7 @@ const Header = () => {
                                 /blog
                             </span>
                         )
-                    } else if (location.pathname.includes("mentorship")) {
-                        return null
-                    } else if (
+                    }  else if (
                         pages.includes(location.pathname.replace(/\/$/, "")) &&
                         !location.pathname.includes("404.htm")
                     ) {
@@ -92,27 +90,27 @@ const Header = () => {
                     <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/about"
+                        to="/projects"
                     >
-                      <span role="img" aria-label="about">🧭</span>
+                      <span role="img" aria-label="projects">🛠️</span>
                     </Link>
                 </li>
                 <li>
                     <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/mentorship"
+                        to="/education"
                     >
-                        <span role="img" aria-label="mentorship">🏠</span>
+                        <span role="img" aria-label="education">🎓</span>
                     </Link>
                 </li>
                 <li>
                     <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/uses"
+                        to="/blog"
                     >
-                       <span role="img" aria-label="uses">⚽</span>
+                       <span role="img" aria-label="blog">✍️</span>
                     </Link>
                 </li>
                 <li>

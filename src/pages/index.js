@@ -78,8 +78,8 @@ const IndexPage = props => {
                         contact me
                     </Link>{" "}
                     or{" "}
-                    <Link to="/about" className={mainStyles.link}>
-                        get to know me a little better
+                    <Link to="/projects" className={mainStyles.link}>
+                        know more about my work
                     </Link>
                     .
                 </p>      

@@ -4,12 +4,13 @@ import Head from "../components/head"
 import mainStyle from "../styles/main.module.scss"
 import contactStyle from "./contact.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons"
 import {
     faTwitter,
     faGithub,
     faDev,
     faLinkedin,
+    faPhone,
     faMedium,
 } from "@fortawesome/free-brands-svg-icons"
 
@@ -17,9 +18,12 @@ const ContactPage = (props) => {
     return (
         <Layout>
             <Head title="Contact"  path={props.path} />
-
+            <h1>
+                <FontAwesomeIcon icon={faPhoneAlt} /> How to contact me ?
+                </h1>
+                <br/>
             <p>
-                My preferred way of contact is via&nbsp;
+                You can contact me via&nbsp;
                 <a
                     href="https://twitter.com/iamsaeed_dev"
                     class={mainStyle.link}

@@ -8,7 +8,7 @@ import Typist from "react-typist"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-    faHeart,
+    faHeart, faPen, faMicrophone
 } from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`
@@ -55,6 +55,7 @@ const IndexPage = props => {
                         className={indexStyles.heart}
                     />
                     &nbsp;developing software!
+                    <br />
                 </h2>
                 <p>
                     I am a <strong>full-stack software engineer</strong>{" "}
@@ -68,8 +69,8 @@ const IndexPage = props => {
                 </p>
 
                 <p>
-                    I love contributing in <strong>open source communities </strong>
-                     and am open for any <strong>speaking opportunity, mentoring 
+                    I love contributing in <strong>📖 open source communities </strong>
+                     and am open for any <strong>🎙️ speaking opportunity, 👨‍🏫 mentoring 
                     or any other help</strong> which you might need.
                 </p>
                      

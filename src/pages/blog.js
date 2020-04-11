@@ -2,22 +2,52 @@ import React from "react"
 import Layout from "../components/layout"
 import mainStyles from "../styles/main.module.scss"
 import Head from "../components/head"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPen, faArrowUp } from "@fortawesome/free-solid-svg-icons"
+
 
 const UsesPage = props => {
     return (
         <Layout>
-            <Head title="Uses" path={props.path} />
+            <Head title="Blog" path={props.path} />
             <div className={mainStyles.postContent}>
-                <p>
+                {/* <p>
                     Sometimes, people ask me what IDE, theme, font, etc I use.
                     So I decided to write up a little post that sums up. This
                     page is inspired by{" "}
                     <a href="https://wesbos.com/uses">Wes Bos' uses page</a>.
-                </p>
+                </p> */}
 
-                <h1>Editor + Terminal</h1>
+<h1>
+                <FontAwesomeIcon icon={faPen} /> What do I write ?
+                </h1>
+                <br />
+                <p>         I am a software engineer but I have been writing on
+                            different topics related to tech i.e <strong>📊 data science</strong>, <strong>📈 analytics</strong>, 
+                            <strong>🏢 entrepreneurship</strong> and <strong>💻 programming</strong> on <strong>
+                                
+                                <a href="https://medium.com/@saeeddev">Medium</a></strong> and <strong>
+                                    
+                                    <a href="https://dev.to/saeeddev">The DEV Community</a></strong>. {" "}
+                            </p>
+                            <br />
+                            <br />
 
-                <table className={mainStyles.table}>
+                            <h1>
+                <FontAwesomeIcon icon={faArrowUp} /> What I have achieved so far ?
+                </h1>
+                <br />
+
+                            <p> On The DEV Community, I have around <strong>14K+ followers</strong> and my articles have got around <strong>225K+ views</strong>
+                            . I have been a <strong>top writer</strong> in different programming languages related categories.</p>
+                            <p>
+                            On Medium, I have around <strong>14K+ views</strong>. My articles have been featured in Top publications
+                            like <strong>Data Driven Investor</strong>, <strong>JavaScript in Plain English</strong>, and <strong>ExtendNode’s Blogs for Entrepreneurs
+</strong> .
+                        </p>
+                {/* <br /> */}
+
+                {/* <table className={mainStyles.table}>
                     <tr>
                         <td>Code Editor</td>
                         <td>
@@ -189,7 +219,7 @@ const UsesPage = props => {
                             </a>
                         </td>
                     </tr>
-                </table>
+                </table> */}
             </div>
         </Layout>
     )

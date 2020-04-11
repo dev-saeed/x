@@ -42,12 +42,7 @@ const Footer = () => {
                     />
                 </a>
             </p> */}
-            <p>
-                Built on the top of a theme by{" "}
-            <a href="https://www.marc.dev" alt="Marc Backes">
-                    Marc Backes
-            </a>
-            </p>
+           
             <p className={footerStyles.social}>
                 <a href="https://twitter.com/iamsaeed_dev">
                     <FontAwesomeIcon icon={faTwitter} />
@@ -72,6 +67,12 @@ const Footer = () => {
             {/* <p className={footerStyles.small}>
                 {metadata.hostname} v.{metadata.version}
             </p> */}
+             <p className={footerStyles.small}>
+                Built on the top of a theme by{" "}
+           
+                    Marc Backes
+           
+            </p>
         </footer>
     )
 }

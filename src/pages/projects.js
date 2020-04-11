@@ -15,9 +15,12 @@ import {
     faServer,
     faFlask,
 } from "@fortawesome/free-solid-svg-icons"
-import {  
+import { 
+    faPaypal,
+    faKaggle,
+    faDigitalOcean, 
     faHtml5, faNpm, faDocker, faTrello,
-     faCss3, faGulp, faGrunt, faServicestack, faReact, faNode, faJs, faPython, faAndroid, faAppStoreIos } from "@fortawesome/free-brands-svg-icons"
+     faCss3, faReact, faNode, faJs, faPython, faAndroid, faAppStoreIos } from "@fortawesome/free-brands-svg-icons"
 
 
 export const query = graphql`
@@ -33,17 +36,9 @@ export const query = graphql`
 `
 
 const AboutPage = props => {
-    const profilePicture = (
-        <img
-            src={props.data.file.childImageSharp.fixed.src}
-            alt="Marc Backes"
-            className={aboutStyle.profilePicture}
-        />
-    )
-
     return (
         <Layout>
-            <Head title="About" path={props.path} />
+            <Head title="Projects" path={props.path} />
             <div className={aboutStyle.about}>
                 <div className={aboutStyle.intro}>
                     <div className={aboutStyle.introText}>
@@ -129,7 +124,7 @@ const AboutPage = props => {
                 <hr className={aboutStyle.gradientLine} />
 
                 <h1>
-                    What are my skills <FontAwesomeIcon icon={faWrench} /> ?
+                <FontAwesomeIcon icon={faWrench} /> What are my skills ?
                 </h1>
 
                 <div className={aboutStyle.skills}>
@@ -146,6 +141,10 @@ const AboutPage = props => {
                     <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faAndroid} />
                     <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faAppStoreIos} />
                     <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faTrello} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faDigitalOcean} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faPaypal} />
+                    <FontAwesomeIcon className={aboutStyle.skillIcons} size="5x" icon={faKaggle} />
+
                     {/* <FontAwesomeIcon icon={faDatabase} /> */}
                     {/* <Skill name="MongoDB" file="mongodb" progress={75} />
                     <Skill name="Express.js" file="expressjs" progress={60} />

@@ -132,10 +132,6 @@
         }
     }
 
-    h1 {
-        margin-top: 4rem;
-    }
-
     h1:hover,
     h2:hover,
     h3:hover,
@@ -149,16 +145,16 @@
         }
     }
 
-    h1 {
-        &:hover {
-            padding-left: 35px;
-        }
+    // h1 {
+    //     &:hover {
+    //         padding-left: 35px;
+    //     }
 
-        &:before {
-            margin-left: -35px;
-            content: "#";
-        }
-    }
+    //     &:before {
+    //         margin-left: -35px;
+    //         content: "#";
+    //     }
+    // }
 
     h2 {
         &:hover {

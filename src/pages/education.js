@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import LifeEvent from "../components/lifeEvent"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSadTear, faGraduationCap } from "@fortawesome/free-regular-svg-icons"
+import { faSadTear, faAddressBook } from "@fortawesome/free-regular-svg-icons"
 
 
 export const query = graphql`
@@ -23,52 +23,16 @@ export const query = graphql`
 `
 
 const MentorshipIndex = props => {
-    const socialCardMeta = [
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:site", content: "@_marcba" },
-        {
-            name: "twitter:title",
-            content: "Apply for  free mentorship",
-        },
-        {
-            name: "twitter:description",
-            content: "Mentorship for aspiring web developers",
-        },
-        {
-            name: "twitter:image",
-            content: "https://marc.dev/images/mentorship.jpg",
-        },
 
-        {
-            name: "og:title",
-            content: "Apply for  free mentorship",
-        },
-        {
-            name: "og:description",
-            content: "Mentorship for aspiring web developers",
-        },
-        {
-            name: "og:image",
-            content: "https://marc.dev/images/mentorship.jpg",
-        },
-        {
-            name: "og:url",
-            content: "https://marc.dev/mentorship",
-        },
-    ]
 
     return (
         <Layout>
-            <Head
-                title="Apply to mentorship"
-                path="/education"
-                socialCardMeta={socialCardMeta}
-            />
+          <Head title="Education" path={props.path} />
 
                 <h1>
-                    Education <FontAwesomeIcon icon={faGraduationCap} />
+                <FontAwesomeIcon icon={faAddressBook} /> What did I study ?
                 </h1>
-
+                <br />
                 <LifeEvent
                     timePeriod="2018 - 2019"
                     title="M.Sc. in Electronics"

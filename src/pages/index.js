@@ -62,8 +62,8 @@ const IndexPage = props => {
                     primarily working on 🌐 and 📱 apps.
                 </p>
                 <p>
-                    I mostly work with <strong>JavaScript</strong> (⚛️ React Native
-                    &amp; ReactJS), but also have experience with 🐍 Python in {" "}
+                    I mostly work with <strong>JavaScript (⚛️ React Native
+                    &amp; ReactJS)</strong>, but also have experience with 🐍 Python and its frameworks {" "}
                     <strong>Flask</strong>, <strong>Django</strong>, and
                     others.
                 </p>

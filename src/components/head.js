@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     if (!canonicalUrl && path) {
-        canonicalUrl = `https://marc.dev${path}`
+        canonicalUrl = `https://github.com/iamsaeeddev/x/static/images/${path}?raw=true`
     }
     const data = useStaticQuery(graphql`
         query {
@@ -31,7 +31,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             },
             {
                 name: "twitter:image",
-                content: "https://marc.dev/images/SocialCard.jpg",
+                content: "https://github.com/iamsaeeddev/x/static/images/SocialCard.jpg?raw=true",
             },
             {
                 name: "og:title",
@@ -44,7 +44,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             },
             {
                 name: "og:image",
-                content: "https://marc.dev/images/SocialCard.jpg",
+                content: "https://github.com/iamsaeeddev/x/static/images/SocialCard.jpg?raw=true",
             },
         ]
     }

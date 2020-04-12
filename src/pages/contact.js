@@ -26,6 +26,7 @@ const ContactPage = (props) => {
                 You can contact me via&nbsp;
                 <a
                     href="https://twitter.com/iamsaeeddev"
+                    target="_blank"
                     class={mainStyle.link}
                 >
                     Twitter <FontAwesomeIcon icon={faTwitter} />
@@ -33,6 +34,7 @@ const ContactPage = (props) => {
                 &nbsp;or&nbsp;
                 <a
                     className={mainStyle.link}
+                    target="_blank"
                     href="mailto:saeed_dev@yahoo.com"
                     alt="Mail to saeed_dev@yahoo.com"
                 >
@@ -42,6 +44,7 @@ const ContactPage = (props) => {
             <div className={contactStyle.icons}>
                 <a
                     href="https://twitter.com/iamsaeeddev"
+                    target="_blank"
                     class={contactStyle.iconLink}
                 >
                     <FontAwesomeIcon icon={faTwitter} />
@@ -50,20 +53,22 @@ const ContactPage = (props) => {
                 <a
                     href="https://github.com/iamsaeeddev"
                     class={contactStyle.iconLink}
+                    target="_blank"
                 >
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
 
-                <a href="https://dev.to/iamsaeeddev" class={contactStyle.iconLink}>
+                <a href="https://dev.to/iamsaeeddev" target="_blank" class={contactStyle.iconLink}>
                     <FontAwesomeIcon icon={faDev} />
                 </a>
 
-                <a href="https://medium.com/@iamsaeeddev" class={contactStyle.iconLink}>
+                <a href="https://medium.com/@iamsaeeddev" target="_blank" class={contactStyle.iconLink}>
                     <FontAwesomeIcon icon={faMedium} />
                 </a>
 
                 <a
                     href="https://www.linkedin.com/in/iamsaeeddev/"
+                    target="_blank"
                     class={contactStyle.iconLink}
                 >
                     <FontAwesomeIcon icon={faLinkedin} />

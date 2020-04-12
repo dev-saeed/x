@@ -44,23 +44,23 @@ const Footer = () => {
             </p> */}
            
             <p className={footerStyles.social}>
-                <a href="https://twitter.com/iamsaeeddev">
+                <a href="https://twitter.com/iamsaeeddev" target="_blank">
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
 
-                <a href="https://github.com/iamsaeeddev">
+                <a href="https://github.com/iamsaeeddev" target="_blank">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
 
-                <a href="https://dev.to/iamsaeeddev">
+                <a href="https://dev.to/iamsaeeddev" target="_blank">
                     <FontAwesomeIcon icon={faDev} />
                 </a>
 
-                <a href="https://medium.com/@iamsaeeddev">
+                <a href="https://medium.com/@iamsaeeddev" target="_blank">
                     <FontAwesomeIcon icon={faMedium} />
                 </a>
 
-                <a href="https://www.linkedin.com/in/iamsaeeddev/">
+                <a href="https://www.linkedin.com/in/iamsaeeddev/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
             </p>

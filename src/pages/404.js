@@ -16,7 +16,7 @@ const NotFound = props => {
                 <h2>Page Not Found</h2>
                 <p>
                     <Link className={mainStyles.button} to="/">
-                        Head home <FontAwesomeIcon icon={faChevronRight} />
+                        Go to <FontAwesomeIcon icon={faChevronRight} />
                     </Link>
                 </p>
             </div>

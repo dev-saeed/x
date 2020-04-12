@@ -19,7 +19,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     if (!socialCardMeta) {
         socialCardMeta = [
             { name: "twitter:card", content: "summary_large_image" },
-            { name: "twitter:site", content: "@_marcba" },
+            { name: "twitter:site", content: "@iamsaeeddev" },
             {
                 name: "twitter:title",
                 content: title,
@@ -27,7 +27,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             {
                 name: "twitter:description",
                 content:
-                    "Marc is a Full-Stack Web Developer based in Luxembourg 👨‍💻",
+                    "Full Stack Software Engineer | Saeed Ahmad",
             },
             {
                 name: "twitter:image",
@@ -40,7 +40,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             {
                 name: "og:description",
                 content:
-                    "Marc is a Full-Stack Web Developer based in Luxembourg 👨‍💻",
+                    "Full Stack Software Engineer | Saeed Ahmad ",
             },
             {
                 name: "og:image",
@@ -52,7 +52,8 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     const meta = [
         {
             name: "description",
-            content: "Marc is a Full-Stack Web Developer based in Luxembourg",
+            content: "Full Stack Software Engineer | Saeed Ahmad",
+
         },
         ...socialCardMeta,
     ]

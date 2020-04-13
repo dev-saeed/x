@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
-    if (!canonicalUrl && path) {
-        canonicalUrl = `https://github.com/iamsaeeddev/x/static/images/${path}?raw=true`
-    }
+    // if (!canonicalUrl && path) {
+    //     canonicalUrl = `https://github.com/iamsaeeddev/x/static/images/${path}?raw=true`
+    // }
     const data = useStaticQuery(graphql`
         query {
             site {

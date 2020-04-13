@@ -1,5 +1,5 @@
 {
-    "name": "marc-dev-gatsby",
+    "name": "portfolio-gatsby",
     "private": true,
     "description": "Website and Blog",
     "version": "0.1.0",
@@ -16,7 +16,6 @@
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
     },
     "dependencies": {
-        "@contentful/rich-text-react-renderer": "^13.4.0",
         "@fortawesome/fontawesome-svg-core": "^1.2.25",
         "@fortawesome/free-brands-svg-icons": "^5.11.2",
         "@fortawesome/free-regular-svg-icons": "^5.11.2",

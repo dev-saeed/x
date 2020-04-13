@@ -6,15 +6,15 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     // if (!canonicalUrl && path) {
     //     canonicalUrl = `https://github.com/iamsaeeddev/x/static/images/${path}?raw=true`
     // }
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `)
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         site {
+    //             siteMetadata {
+    //                 title
+    //             }
+    //         }
+    //     }
+    // `)
 
     // if (!socialCardMeta) {
     //     socialCardMeta = [
@@ -49,19 +49,19 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     //     ]
     // }
 
-    const meta = [
-        {
-            name: "description",
-            content: "Full Stack Software Engineer | Saeed Ahmad",
+    // const meta = [
+    //     {
+    //         name: "description",
+    //         content: "Full Stack Software Engineer | Saeed Ahmad",
 
-        },
-        // ...socialCardMeta,
-    ]
+    //     },
+    //     // ...socialCardMeta,
+    // ]
 
     return (
         <>
             <Helmet
-                title={`${data.site.siteMetadata.title}`}
+                title="Saeed"
                 // link={
                 //     canonicalUrl
                 //         ? [
@@ -73,7 +73,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
                 //           ]
                 //         : []
                 // }
-                meta={meta}
+                // meta={meta}
             ></Helmet>
         </>
     )

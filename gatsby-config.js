@@ -13,7 +13,7 @@ module.exports = {
     siteMetadata: {
         title:
         "Full-Stack Software Engineer | Saeed | JavaScript, ReactJS, React Native, Data Science, Machine Learning",
-        author: "Saeed",
+        author: "Saeed Ahmad - Full Stack Software Engineer",
         version: "0.2.1",
         hostname: "saeed",
     },

@@ -62,18 +62,18 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
         <>
             <Helmet
                 title={`${data.site.siteMetadata.title}`}
-                link={
-                    canonicalUrl
-                        ? [
-                              {
-                                  rel: "canonical",
-                                  key: canonicalUrl,
-                                  href: canonicalUrl,
-                              },
-                          ]
-                        : []
-                }
-                meta={meta}
+                // link={
+                //     canonicalUrl
+                //         ? [
+                //               {
+                //                   rel: "canonical",
+                //                   key: canonicalUrl,
+                //                   href: canonicalUrl,
+                //               },
+                //           ]
+                //         : []
+                // }
+                // meta={meta}
             ></Helmet>
         </>
     )

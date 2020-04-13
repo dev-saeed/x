@@ -61,7 +61,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     return (
         <>
             <Helmet
-                title="Saeed"
+                title={`${title} | ${data.site.siteMetadata.title}`}
                 link={
                     canonicalUrl
                         ? [

@@ -16,38 +16,38 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
         }
     `)
 
-    if (!socialCardMeta) {
-        socialCardMeta = [
-            { name: "twitter:card", content: "summary_large_image" },
-            { name: "twitter:site", content: "@iamsaeeddev" },
-            {
-                name: "twitter:title",
-                content: title,
-            },
-            {
-                name: "twitter:description",
-                content:
-                    "Full Stack Software Engineer | Saeed Ahmad",
-            },
-            {
-                name: "twitter:image",
-                content: "https://github.com/iamsaeeddev/x/static/images/SocialCard.jpg?raw=true",
-            },
-            {
-                name: "og:title",
-                content: title,
-            },
-            {
-                name: "og:description",
-                content:
-                    "Full Stack Software Engineer | Saeed Ahmad ",
-            },
-            {
-                name: "og:image",
-                content: "https://github.com/iamsaeeddev/x/static/images/SocialCard.jpg?raw=true",
-            },
-        ]
-    }
+    // if (!socialCardMeta) {
+    //     socialCardMeta = [
+    //         { name: "twitter:card", content: "summary_large_image" },
+    //         { name: "twitter:site", content: "@iamsaeeddev" },
+    //         {
+    //             name: "twitter:title",
+    //             content: title,
+    //         },
+    //         {
+    //             name: "twitter:description",
+    //             content:
+    //                 "Full Stack Software Engineer | Saeed Ahmad",
+    //         },
+    //         {
+    //             name: "twitter:image",
+    //             content: "https://github.com/iamsaeeddev/x/static/images/SocialCard.jpg?raw=true",
+    //         },
+    //         {
+    //             name: "og:title",
+    //             content: title,
+    //         },
+    //         {
+    //             name: "og:description",
+    //             content:
+    //                 "Full Stack Software Engineer | Saeed Ahmad ",
+    //         },
+    //         {
+    //             name: "og:image",
+    //             content: "https://github.com/iamsaeeddev/x/static/images/SocialCard.jpg?raw=true",
+    //         },
+    //     ]
+    // }
 
     const meta = [
         {
@@ -55,7 +55,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             content: "Full Stack Software Engineer | Saeed Ahmad",
 
         },
-        ...socialCardMeta,
+        // ...socialCardMeta,
     ]
 
     return (
@@ -73,7 +73,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
                 //           ]
                 //         : []
                 // }
-                // meta={meta}
+                meta={meta}
             ></Helmet>
         </>
     )

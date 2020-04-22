@@ -69,8 +69,9 @@ const Footer = () => {
             </p> */}
              <p className={footerStyles.small}>
                 Built on the top of a theme by{" "}
-           
+                <a href="https://marc.dev" target="_blank">
                     Marc Backes
+                    </a>
            
             </p>
         </footer>

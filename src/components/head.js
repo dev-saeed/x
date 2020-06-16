@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     if (!canonicalUrl && path) {
-        canonicalUrl = `https://github.com/iamsaeeddev/x/static/images/${path}?raw=true`
+        canonicalUrl = `https://github.com/mrsaeeddev/x/static/images/${path}?raw=true`
     }
     const data = useStaticQuery(graphql`
         query {
@@ -19,7 +19,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
     if (!socialCardMeta) {
         socialCardMeta = [
             { name: "twitter:card", content: "summary_large_image" },
-            { name: "twitter:site", content: "@iamsaeeddev" },
+            { name: "twitter:site", content: "@mrsaeeddev" },
             {
                 name: "twitter:title",
                 content: title,
@@ -31,7 +31,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             },
             {
                 name: "twitter:image",
-                content: "https://github.com/iamsaeeddev/x/blob/master/static/images/socialCard.jpg?raw=true",
+                content: "https://github.com/mrsaeeddev/x/blob/master/static/images/socialCard.jpg?raw=true",
             },
             {
                 name: "og:title",
@@ -44,7 +44,7 @@ const Head = ({ title, socialCardMeta, canonicalUrl, path }) => {
             },
             {
                 name: "og:image",
-                content: "https://github.com/iamsaeeddev/x/blob/master/static/images/socialCard.jpg?raw=true",
+                content: "https://github.com/mrsaeeddev/x/blob/master/static/images/socialCard.jpg?raw=true",
             },
         ]
     }

@@ -25,7 +25,7 @@ const ContactPage = (props) => {
             <p>
                 You can contact me via&nbsp;
                 <a
-                    href="https://twitter.com/iamsaeeddev"
+                    href="https://twitter.com/mrsaeeddev"
                     target="_blank"
                     class={mainStyle.link}
                 >
@@ -43,7 +43,7 @@ const ContactPage = (props) => {
             </p>
             <div className={contactStyle.icons}>
                 <a
-                    href="https://twitter.com/iamsaeeddev"
+                    href="https://twitter.com/mrsaeeddev"
                     target="_blank"
                     class={contactStyle.iconLink}
                 >
@@ -51,23 +51,23 @@ const ContactPage = (props) => {
                 </a>
 
                 <a
-                    href="https://github.com/iamsaeeddev"
+                    href="https://github.com/mrsaeeddev"
                     class={contactStyle.iconLink}
                     target="_blank"
                 >
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
 
-                <a href="https://dev.to/iamsaeeddev" target="_blank" class={contactStyle.iconLink}>
+                <a href="https://dev.to/mrsaeeddev" target="_blank" class={contactStyle.iconLink}>
                     <FontAwesomeIcon icon={faDev} />
                 </a>
 
-                <a href="https://medium.com/@iamsaeeddev" target="_blank" class={contactStyle.iconLink}>
+                <a href="https://medium.com/@mrsaeeddev" target="_blank" class={contactStyle.iconLink}>
                     <FontAwesomeIcon icon={faMedium} />
                 </a>
 
                 <a
-                    href="https://www.linkedin.com/in/iamsaeeddev/"
+                    href="https://www.linkedin.com/in/mrsaeeddev/"
                     target="_blank"
                     class={contactStyle.iconLink}
                 >

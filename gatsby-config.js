@@ -10,6 +10,7 @@ const path = require("path")
  */
 
 module.exports = {
+    pathPrefix: "/x",
     siteMetadata: {
         title:
         "Full-Stack Software Engineer | Saeed | JavaScript, ReactJS, React Native, Data Science, Machine Learning",

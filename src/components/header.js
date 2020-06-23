@@ -87,13 +87,13 @@ const Header = () => {
                 </li>
               
                 <li>
-                    <Link
+                    <a
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/projects"
+                        href="saeed.js.org/projects"
                     >
                       <span role="img" aria-label="projects">🛠️</span>
-                    </Link>
+                    </a>
                 </li>
                 <li>
                     <Link

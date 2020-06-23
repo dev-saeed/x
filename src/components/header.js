@@ -90,7 +90,7 @@ const Header = () => {
                     <a
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        href="saeed.js.org/projects"
+                        href="http://saeed.js.org/projects"
                     >
                       <span role="img" aria-label="projects">🛠️</span>
                     </a>

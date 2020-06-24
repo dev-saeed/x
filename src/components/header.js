@@ -87,19 +87,19 @@ const Header = () => {
                 </li>
               
                 <li>
-                    <a
+                    <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        href="saeed.js.org/projects"
+                        href="-/projects"
                     >
                       <span role="img" aria-label="projects">🛠️</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/education"
+                        to="-/education"
                     >
                         <span role="img" aria-label="education">🎓</span>
                     </Link>
@@ -108,7 +108,7 @@ const Header = () => {
                     <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/blog"
+                        to="-/blog"
                     >
                        <span role="img" aria-label="blog">✍️</span>
                     </Link>
@@ -117,7 +117,7 @@ const Header = () => {
                     <Link
                         className={headerStyles.navItem}
                         activeClassName={headerStyles.activeNavItem}
-                        to="/contact"
+                        to="-/contact"
                     >
                        <span role="img" aria-label="contact">☎️</span>
                     </Link>

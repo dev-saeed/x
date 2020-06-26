@@ -5,12 +5,12 @@
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {
-        "build": "env-cmd -f .env gatsby build",
+        "build": "gatsby build",
         "develop": "env-cmd -f .env gatsby develop",
         "preview": "env PREVIEW=true gatsby develop",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
         "start": "npm run develop",
-        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+        "deploy": "gh-pages -b master -d public",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
